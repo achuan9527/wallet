@@ -21,7 +21,7 @@ function App() {
     const client = createWalletClient({
       account,
       chain: mainnet,
-      transport: http()
+      transport: http() // 传输层 可自定义， 默认免费的有一定额度
     })
       .extend(publicActions)
       .extend(walletActions)
